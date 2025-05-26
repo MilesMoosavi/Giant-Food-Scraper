@@ -1,0 +1,71 @@
+{
+  "scrape_date": "2025-05-25T22:39:09.282288",
+  "total_products": 8,
+  "source": "Demo Giant Food Scraper",
+  "products": [
+    {
+      "name": "Lay's Classic Potato Chips",
+      "size": "10.5 oz",
+      "price": "$3.99",
+      "url": "https://giantfood.com/products/lays-classic-potato-chips",
+      "category": "Potato Chips",
+      "brand": "Lay's"
+    },
+    {
+      "name": "Pringles Original",
+      "size": "5.5 oz",
+      "price": "$2.49",
+      "url": "https://giantfood.com/products/pringles-original",
+      "category": "Potato Chips",
+      "brand": "Pringles"
+    },
+    {
+      "name": "Kettle Brand Sea Salt Potato Chips",
+      "size": "8.5 oz",
+      "price": "$4.79",
+      "url": "https://giantfood.com/products/kettle-brand-sea-salt",
+      "category": "Potato Chips",
+      "brand": "Kettle Brand"
+    },
+    {
+      "name": "Ruffles Original",
+      "size": "8.5 oz",
+      "price": "$3.69",
+      "url": "https://giantfood.com/products/ruffles-original",
+      "category": "Potato Chips",
+      "brand": "Ruffles"
+    },
+    {
+      "name": "Cape Cod Original Kettle Cooked Chips",
+      "size": "8 oz",
+      "price": "$4.29",
+      "url": "https://giantfood.com/products/cape-cod-original",
+      "category": "Potato Chips",
+      "brand": "Cape Cod"
+    },
+    {
+      "name": "Utz Original Potato Chips",
+      "size": "9.5 oz",
+      "price": "$3.89",
+      "url": "https://giantfood.com/products/utz-original",
+      "category": "Potato Chips",
+      "brand": "Utz"
+    },
+    {
+      "name": "Wise Original Potato Chips",
+      "size": "9 oz",
+      "price": "$3.59",
+      "url": "https://giantfood.com/products/wise-original",
+      "category": "Potato Chips",
+      "brand": "Wise"
+    },
+    {
+      "name": "Terra Original Vegetable Chips",
+      "size": "6.8 oz",
+      "price": "$5.49",
+      "url": "https://giantfood.com/products/terra-vegetable-chips",
+      "category": "Vegetable Chips",
+      "brand": "Terra"
+    }
+  ]
+}
