@@ -57,12 +57,31 @@ class GiantFoodScraper:
 
         if not product_containers:
             print("Could not find any product containers. The website's HTML structure may have changed or the block is very strong.")
-            return
-
-        print(f"Found {len(product_containers)} products. Parsing now...")
+            return        print(f"Found {len(product_containers)} products. Parsing now...")
         for product in product_containers:
             try:
-                name = product.find('h2', class_='pdl-static-category_product_name').text.strip()
+                # Get the raw product name element
+                name_element = product.find('h2', class_='pdl-static-category_product_name')
+                
+                # Clean up the product name
+                if name_element:
+                    # Extract and clean the product name
+                    raw_name = name_element.text.strip()
+                    
+                    # Special handling for "Ahold Wedge Icon" products
+                    if "Ahold Wedge Icon" in raw_name:
+                        # Extract the actual product name (last non-empty line)
+                        name_lines = [line.strip() for line in raw_name.split('\n') if line.strip()]
+                        if name_lines:
+                            name = name_lines[-1]  # Get the last non-empty line
+                        else:
+                            name = "Unknown Product"
+                    else:
+                        # For normal products, just use the text with basic cleanup
+                        name = ' '.join(raw_name.split())  # Normalize whitespace
+                else:
+                    name = "Unknown Product"
+                
                 size = product.find('p', class_='pdl-static-category_product_unit').text.strip()
                 # Placeholder for price/other details if they were to be added
                 # price_element = product.find(...) 
