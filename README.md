@@ -2,7 +2,7 @@
 
 This project demonstrates web scraping techniques for collecting product data from grocery store websites, specifically targeting Giant Food's product catalog.
 
-## 🚧 Important Notice
+## Important Notice
 
 Due to anti-bot measures implemented by Giant Food's website, direct scraping returns 403 Forbidden errors. This is common for major retail websites that protect their data from automated access.
 
@@ -26,18 +26,18 @@ Giant Food Scraper/
 ## Features
 
 ### Main Scraper (`main_scraper.py`)
-- **Robust HTTP handling** with retry logic and delays
-- **Enhanced browser headers** to mimic real browser requests
-- **Multiple selector strategies** to handle different HTML structures
-- **CSV output** with product data (name, size, price, URL)
-- **Error handling** for network issues and parsing problems
-- **Debug functionality** saves HTML for analysis when scraping fails
+- Robust HTTP handling with retry logic and delays
+- Enhanced browser headers to mimic real browser requests
+- Multiple selector strategies to handle different HTML structures
+- CSV output with product data (name, size, price, URL)
+- Error handling for network issues and parsing problems
+- Debug functionality saves HTML for analysis when scraping fails
 
 ### Demo Scraper (`demo_scraper.py`)
-- **Mock data generation** showing expected scraper output
-- **Multiple output formats** (CSV and JSON)
-- **Data analysis** with price and brand statistics
-- **Educational example** of scraper functionality
+- Mock data generation showing expected scraper output
+- Multiple output formats (CSV and JSON)
+- Data analysis with price and brand statistics
+- Educational example of scraper functionality
 
 ## Installation & Setup
 
@@ -72,30 +72,30 @@ python -m scraper.main_scraper
 ## Technical Approach
 
 ### Web Scraping Strategy
-1. **Session Management**: Uses `requests.Session()` for persistent connections
-2. **Browser Mimicking**: Comprehensive headers including:
+1. Session Management: Uses `requests.Session()` for persistent connections
+2. Browser Mimicking: Comprehensive headers including:
    - User-Agent (Chrome 120)
    - Accept headers
    - Security headers (Sec-Fetch-*)
    - Cache control
 
-3. **Resilient Parsing**: Multiple CSS selector strategies for:
+3. Resilient Parsing: Multiple CSS selector strategies for:
    - Product containers
    - Product names
    - Sizes/units
    - Prices
    - Product URLs
 
-4. **Error Handling**:
+4. Error Handling:
    - Network timeouts
    - HTTP error codes
    - Parsing failures
    - Missing elements
 
 ### Data Output
-- **CSV Format**: Compatible with Excel and data analysis tools
-- **JSON Format**: Structured data with metadata
-- **File Organization**: All outputs saved to `data/` directory
+- CSV Format: Compatible with Excel and data analysis tools
+- JSON Format: Structured data with metadata
+- File Organization: All outputs saved to `data/` directory
 
 ## Dependencies
 
@@ -106,17 +106,17 @@ python -m scraper.main_scraper
 
 ## Ethical Considerations
 
-This project is for **educational purposes** and demonstrates:
+This project is for educational purposes and demonstrates:
 - Respectful scraping practices (delays between requests)
 - Error handling for blocked requests
 - Alternative approaches when direct scraping fails
 
 ### Best Practices Implemented:
-- ✅ Reasonable delays between requests
-- ✅ Proper User-Agent headers
-- ✅ Graceful handling of 403/403 errors
-- ✅ Session reuse to minimize server load
-- ✅ Limited request volume for testing
+- Reasonable delays between requests
+- Proper User-Agent headers
+- Graceful handling of 403/403 errors
+- Session reuse to minimize server load
+- Limited request volume for testing
 
 ## Troubleshooting
 
@@ -141,9 +141,9 @@ pip install -r requirements.txt
 ## Development Notes
 
 ### VS Code Configuration
-- **Debugging**: Configured Python debugger for `main_scraper.py`
-- **Tasks**: Automated commands for running scraper and installing dependencies
-- **IntelliSense**: Full Python support with virtual environment detection
+- Debugging: Configured Python debugger for `main_scraper.py`
+- Tasks: Automated commands for running scraper and installing dependencies
+- IntelliSense: Full Python support with virtual environment detection
 
 ### Future Enhancements
 - [ ] API integration for official data access
@@ -155,7 +155,7 @@ pip install -r requirements.txt
 
 ## Legal and Compliance
 
-⚠️ **Important**: Always review website Terms of Service and robots.txt before scraping. This project is for educational purposes and should be adapted for production use with proper permissions and rate limiting.
+This project is for educational purposes. Website Terms of Service and robots.txt should be reviewed before scraping. Production use requires proper permissions and rate limiting.
 
 ## Output Examples
 
